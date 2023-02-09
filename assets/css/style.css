@@ -1,4 +1,3 @@
-@charset "UTF-8";
 a {
   text-decoration: none;
 }
@@ -220,6 +219,9 @@ section {
   object-fit: cover;
 }
 
+.cards .wrapper .container {
+  margin-bottom: 30px;
+}
 .cards .wrapper .container .card {
   width: 31%;
 }
@@ -241,6 +243,13 @@ section {
   object-fit: contain;
   z-index: 2;
   scale: 0.7;
+}
+.cards .wrapper .container .card .cover .scale {
+  scale: 0.8;
+}
+.cards .wrapper .container .card .cover .scale-1 {
+  top: 3%;
+  scale: 0.8;
 }
 .cards .wrapper .container .card .cover .circle {
   width: 60%;
@@ -268,8 +277,23 @@ section {
 }
 .cards .wrapper .container .card p {
   font-family: "Montserrat", sans-serif;
-  font-weight: 7в00;
+  font-weight: 700;
   font-size: 14px;
+}
+.cards .block-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+.cards .block-button .btn {
+  background-color: #ff2200;
+  color: #fff;
+  width: 200px;
+  padding: 15px;
+}
+.cards .block-button .btn:hover {
+  background-color: #fff;
+  color: #ff2200;
 }
 
 /*# sourceMappingURL=style.css.map */

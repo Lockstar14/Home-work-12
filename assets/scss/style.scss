@@ -154,6 +154,7 @@ section{
     .wrapper{
         .container{
             @extend %container;
+            margin-bottom: 30px;
             .card{
                 width: 31%;
                 .cover{
@@ -163,6 +164,13 @@ section{
                         object-fit: contain;
                         z-index: 2;
                         scale: 0.7;
+                    }
+                    .scale{
+                        scale: 0.8;
+                    }
+                    .scale-1{
+                        top: 3%;
+                        scale: 0.8;
                     }
                     .circle{
                         width: 60%;
@@ -189,10 +197,25 @@ section{
                     margin-bottom: 12px;
                 }
                 p{
-                    @include font(7в00);
+                    @include font(700);
                     font-size: 14px;
 
                 }
+            }
+        }
+    }
+    .block-button{
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        .btn{
+            background-color: $orange;
+            color: $white;
+            width: 200px;
+            padding: 15px;
+            &:hover{
+                background-color: $white;
+                color: $orange;
             }
         }
     }
