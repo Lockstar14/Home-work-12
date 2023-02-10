@@ -296,4 +296,149 @@ section {
   color: #ff2200;
 }
 
+footer {
+  background-color: lightgray;
+}
+footer .wrapper .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .wrapper .container h2 {
+  margin-top: 70px;
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+footer .wrapper .container p {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+footer .wrapper .container .email {
+  display: flex;
+  position: relative;
+}
+footer .wrapper .container .email input[type=email] {
+  width: 700px;
+  padding: 8px 40px;
+}
+footer .wrapper .container .email .letter {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+}
+footer .wrapper .container .email .square {
+  width: 30px;
+  padding: 8px;
+  background-color: red;
+  position: relative;
+}
+footer .wrapper .container .email .square .telegram {
+  position: absolute;
+  left: 15px;
+}
+
+.gallery {
+  margin-top: 200px;
+  display: flex;
+}
+.gallery .photo {
+  width: 15.6%;
+  position: relative;
+  width: 100%;
+  padding-top: 15%;
+}
+.gallery .photo img, .gallery .photo .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contacts {
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts .container-1 {
+  width: 30%;
+}
+.contacts .container-1 .logo {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 15px;
+}
+.contacts .container-1 .logo .ellipse {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: #ff2200;
+}
+.contacts .container-1 .logo h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 36px;
+}
+.contacts .container-1 p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 30px;
+  color: rgba(0, 0, 0, 0.309);
+}
+.contacts .container-2 {
+  width: 30%;
+  margin-left: 100px;
+}
+.contacts .container-2 h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.contacts .container-2 .cont-cont {
+  display: flex;
+  flex-direction: row;
+}
+.contacts .container-2 .cont-cont .small-cont {
+  display: flex;
+  flex-direction: column;
+  width: 26%;
+}
+.contacts .container-2 .cont-cont .small-cont:last-child {
+  margin-left: 50px;
+}
+.contacts .container-2 .cont-cont .small-cont a {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.309);
+  margin-bottom: 10px;
+}
+.contacts .container-3 {
+  width: 30%;
+}
+.contacts .container-3 h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.contacts .container-3 p {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.309);
+  margin-bottom: 10px;
+}
+.contacts .container-3 .adress {
+  margin-bottom: 10px;
+  display: flex;
+}
+.contacts .container-3 .adress svg {
+  margin-right: 8px;
+}
+.contacts .container-3 .cont-image {
+  margin-left: -25px;
+}
+
 /*# sourceMappingURL=style.css.map */
