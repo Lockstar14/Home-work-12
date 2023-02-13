@@ -219,6 +219,35 @@ section {
   object-fit: cover;
 }
 
+.cards .products {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.cards .products h2 {
+  margin-top: 70px;
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.cards .products .as {
+  margin-bottom: 35px;
+}
+.cards .products .as a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+  margin-right: 15px;
+}
+.cards .products .as a:hover {
+  color: #ff2200;
+  border-bottom: 2px #ff2200 solid;
+  padding-bottom: 8px;
+}
 .cards .wrapper .container {
   margin-bottom: 30px;
 }
@@ -325,6 +354,7 @@ footer .wrapper .container .email {
 footer .wrapper .container .email input[type=email] {
   width: 700px;
   padding: 8px 40px;
+  outline: none;
 }
 footer .wrapper .container .email .letter {
   position: absolute;
