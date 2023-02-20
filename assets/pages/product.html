@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online-shop</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
@@ -29,85 +26,103 @@
             </div>
         </div>
     </header>
-    <section><div class="main">
-        <div class="wrapper">
-            <div class="block">
-                <h1>
-                    good outfit is a good day
-                </h1>
-                <input type="button" value="Shop now" class="btn white">
-            </div>
-            <div class="block">
-                <div class="cover">
-                    <img src="./assets/img/main.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-    <section class="category">
-        <div class="wrapper">
-            <div class="container">
-                <div class="category-card big">
-                    <div class="cover">
-                        <img src="./assets/img/clothes.jpg" alt="">
-                        <h2>Woman + man fashion</h2>
-                    </div>
-                </div>
-                <div class="category-card">
-                    <div class="cover">
-                        <img src="./assets/img/accessories.jpg" alt="">
-                        <h2>accessories</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="category-card">
-                    <div class="cover">
-                        <img src="./assets/img/man.jpg" alt="">
-                        <h2>man</h2>
-                    </div>
-                </div>
-                <div class="category-card">
-                    <div class="cover">
-                        <img src="./assets/img/woman.jpg" alt="">
-                        <h2>woman</h2>
-                    </div>
-                </div>
-                <div class="category-card">
-                    <div class="cover">
-                        <img src="./assets/img/sneaker.jpg" alt="">
-                        <h2>sneaker</h2>
-                    </div>
-                </div>
-            </div>
+    <section class="page-title">
+        <h2>T-SHIRT</h2>
+        <div class="source">
+            <a href="#">home</a>
+            <span>/</span>
+            <a href="#">shop</a>
+            <span>/</span>
+            <a href="#">men</a>
+            <span>/</span>
+            <a href="#">t-shirt</a>
         </div>
     </section>
-    <section class="cards">
-        <div class="products">
-            <h2>Our products</h2>
-            <div class="as">
-            <a href="#">All</a>
-            <a href="#">Boys fashion</a>
-            <a href="#">Girls fashion</a>
-            <a href="#">Accesories</a>
-        </div>
-        </div>
+    <div class="product">
         <div class="wrapper">
+            <div class="photos">
+                <div class="cover"><img src="../img/t-shirt.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="cover"><img src="../img/t-shirt.png" alt="">
+                    </div>
+                    <div class="cover"><img src="../img/t-shirt.png" alt="">
+                    </div>
+                    <div class="cover"><img src="../img/t-shirt.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-name">
+                    <h1>T-shirt</h1>
+                    <h1 class="price">24.00$</h1>
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, repellendus aliquam minus, laboriosam sed maiores similique magnam culpa eligendi porro suscipit corrupti reiciendis ex eius necessitatibus ratione harum aliquid delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam esse a quas cumque, doloribus fuga sed modi autem soluta, aliquam consectetur ducimus quae non porro repellendus ullam ut iure id!</p>
+                <div class="settings">
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <p class="active">xs</p>
+                        <p>s</p>
+                        <p>m</p>
+                        <p>xl</p>
+                        <p>xxl</p>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <div class="circle-container"><div class="circle" id="blue"></div></div>
+                        <div class="circle-container"><div class="circle active" id="orange"></div></div>
+                        <div class="circle-container"><div class="circle" id="black"></div></div>
+                        <div class="circle-container"><div class="circle" id="pink"></div></div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="counter-container">
+                        <h3>Quantity</h3>
+                        <div class="counter">
+                            <input type="button" value="-" class="minus">
+                            <p class="count">1</p>
+                            <input type="button" value="+" class="plus">
+                        </div>
+                    </div>
+                    <div class="to-cart">
+                        <div class="like"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/> </svg></div>
+                        <input type="button" value="add to cart" class="btn orange">
+                    </div>
+                </div>
+                <div class="share">
+                    <h3>Share in:</h3><svg width="20" height="20" style="color: rgb(122, 117, 117);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" fill="#7a7575"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"style="color: rgb(122, 117, 117);" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16"> <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/> </svg>
+                    <svg style="color: rgb(133, 133, 133);"width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" zoomAndPan="magnify" viewBox="0 0 30 30.000001" height="40" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><clipPath id="id1"><path d="M 5.753906 2.902344 L 23.898438 2.902344 L 23.898438 26.128906 L 5.753906 26.128906 Z M 5.753906 2.902344 " clip-rule="nonzero" fill="#858585"></path></clipPath></defs><g clip-path="url(#id1)"><path fill="#858585" d="M 16.640625 26.128906 L 13.011719 26.128906 C 12.726562 26.128906 12.496094 25.890625 12.496094 25.601562 L 12.496094 6.597656 L 6.277344 6.597656 C 5.988281 6.597656 5.757812 6.363281 5.757812 6.070312 L 5.757812 3.429688 C 5.757812 3.140625 5.988281 2.902344 6.277344 2.902344 L 23.375 2.902344 C 23.660156 2.902344 23.894531 3.140625 23.894531 3.429688 L 23.894531 6.070312 C 23.894531 6.363281 23.660156 6.597656 23.375 6.597656 L 17.15625 6.597656 L 17.15625 25.601562 C 17.15625 25.890625 16.925781 26.128906 16.640625 26.128906 Z M 16.640625 26.128906 " fill-opacity="1" fill-rule="nonzero"></path></g></svg>
+                    <svg style="color: rgb(158, 158, 158);" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16"> <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z" fill="#9e9e9e"></path> </svg>
+                </div>
+                <div class="categories">
+                    <h3>Categories:</h3>
+                    <p>Fashion ,</p>
+                    <p>Men ,</p>
+                    <p>Sunglasses </p>
+                </div>
+                <div class="tags">
+                    <h3>Tags:</h3>
+                    <p>fashion,hoodie</p>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+    <section class="description">
+        <div class="wrapper">
+            <nav> <a href="#">Description</a><a href="#">Additional information</a><a href="#">Reviews</a></nav>
+          <div class="sample-text"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe totam nihil, exercitationem asperiores voluptates tempora, ullam ducimus at repellendus fugit.</p>
+          </div> 
+        </div>
+    </section>
+    <section class="related-products">
+        <div class="wrapper">
+            <h2>Related products</h2>
             <div class="container">
                 <div class="card">
-                  <a href="./assets/pages/product.html">  <div class="cover">
-                        <img src="./assets/img/t-shirt.png" alt="">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Super scarf ultra</h3>
-                        <p class="price">$45</p>
-                    </div>
-                </div></a>
-                <div class="card">
                     <div class="cover">
-                        <img class="scale" src="./assets/img/glasses.png" alt="">
+                        <img src="../img/t-shirt.png" alt="">
                         <div class="circle"></div>
                     </div>
                     <div class="card-content">
@@ -117,7 +132,17 @@
                 </div>
                 <div class="card">
                     <div class="cover">
-                        <img src="./assets/img/scarf.png" alt="">
+                        <img class="scale" src="../img/glasses.png" alt="">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Super scarf ultra</h3>
+                        <p class="price">$45</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cover">
+                        <img src="../img/scarf.png" alt="">
                         <div class="circle"></div>
                     </div>
                     <div class="card-content">
@@ -127,39 +152,6 @@
                 </div>
                 
             </div>
-            <div class="container">
-                <div class="card">
-                    <div class="cover">
-                        <img src="./assets/img/bikerhoodie.png" alt="">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Super scarf ultra</h3>
-                        <p class="price">$45</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cover">
-                        <img class="scale" src="./assets/img/coat.png" alt="">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Super scarf ultra</h3>
-                        <p class="price">$45</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cover">
-                        <img class="scale-1" src="./assets/img/hat.png" alt="">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Super scarf ultra</h3>
-                        <p class="price">$45</p>
-                    </div>
-                </div>
-            </div>
-           <div class="block-button"> <input type="button" value="View all products" class="btn orange"></div>
         </div>
     </section>
     <footer>
@@ -176,12 +168,12 @@
         </div>
     </div>
     <div class="gallery">
-        <div class="photo"><img src="./assets/img/Nigger.png" alt=""></div>
-        <div class="photo"><img src="./assets/img/Stuff.png" alt=""></div>
-        <div class="photo"><img src="./assets/img/bluhead.png" alt=""></div>
-        <div class="photo"><img src="./assets/img/shoes.png" alt=""></div>
-        <div class="photo"><img src="./assets/img/orangeshirtgirl.png" alt=""></div>
-        <div class="photo"><img src="./assets/img/antisocial.png" alt=""></div>
+        <div class="photo"><img src="../img/Nigger.png" alt=""></div>
+        <div class="photo"><img src="../img/Stuff.png" alt=""></div>
+        <div class="photo"><img src="../img/bluhead.png" alt=""></div>
+        <div class="photo"><img src="../img/shoes.png" alt=""></div>
+        <div class="photo"><img src="../img/orangeshirtgirl.png" alt=""></div>
+        <div class="photo"><img src="../img/antisocial.png" alt=""></div>
     </div>
     <div class="contacts">
         <div class="container-1">
@@ -192,7 +184,7 @@
         <p>Товарищи! консультация с широким активом позволяет выполнять важные задания по разработке систем массового участия. Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.
             Идейные соображения высшего порядка, а также укрепление и развитие структуры играет важную роль в формировании существенных финансовых и административных условий. Если у вас есть какие то интересные предложения, обращайтесь! Студия Web-Boss всегда готова решить любую задачу.
         </p>
-        <img src="./assets/img/logos-removebg-preview.png" alt="">
+        <img src="../img/logos-removebg-preview.png" alt="">
     </div>
     <div class="container-2">
         <h3>Useful links</h3>
@@ -229,7 +221,7 @@
        
         </div>
         
-     <div class="cont-image">    <img src="./assets/img/image-removebg-preview (2).png" alt="">
+     <div class="cont-image">    <img src="../img/image-removebg-preview (2).png" alt="">
     </div>
 </div>
     </footer>
