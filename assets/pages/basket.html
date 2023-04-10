@@ -36,114 +36,175 @@
         </div>
     </header>
     <section class="page-title">
-        <h2>checkout cart</h2>
+        <h2>shopping cart</h2>
         <div class="source">
             <a href="#">home</a>
             <span>/</span>
-            <a href="#">checkout</a>
+            <a href="#">shopping cart</a>
         </div>
     </section>
-    <section class="order">
+    <section class="basket">
         <div class="wrapper">
-            <form action="">
-                <h2>billing details</h2>
-                <div class="container">
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Surname">
-                </div>
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Password">
-                <div class="checkbox-container">
-                    <div class="checkbox"> <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M18 7.47418V5.25822C18 4.5677 17.8448 3.88394 17.5433 3.24598C17.2417 2.60803 16.7998 2.02837 16.2426 1.5401C15.6855 1.05183 15.0241 0.664508 14.2961 0.400258C13.5681 0.136008 12.7879 0 12 0C11.2121 0 10.4319 0.136008 9.7039 0.400258C8.97595 0.664508 8.31451 1.05183 7.75736 1.5401C7.20021 2.02837 6.75825 2.60803 6.45672 3.24598C6.1552 3.88394 6 4.5677 6 5.25822V10.5164C6 10.7157 6.09031 10.9067 6.25105 11.0476C6.4118 11.1885 6.62981 11.2676 6.85714 11.2676C7.08447 11.2676 7.30249 11.1885 7.46323 11.0476C7.62398 10.9067 7.71429 10.7157 7.71429 10.5164V8.97653H14.5714V7.47418H7.71429V5.25822C7.71429 4.2621 8.16582 3.30678 8.96954 2.60242C9.77327 1.89805 10.8634 1.50235 12 1.50235C13.1366 1.50235 14.2267 1.89805 15.0305 2.60242C15.8342 3.30678 16.2857 4.2621 16.2857 5.25822V10.4789C16.2857 10.6781 16.376 10.8692 16.5368 11.01C16.6975 11.1509 16.9155 11.23 17.1429 11.23C17.3702 11.23 17.5882 11.1509 17.7489 11.01C17.9097 10.8692 18 10.6781 18 10.4789V8.97653H22.2857V22.4977H1.71429V8.97653H4.28571V7.47418H0V22.5653C0 22.9458 0.172484 23.3107 0.479508 23.5798C0.786532 23.8488 1.20295 24 1.63714 24H22.3629C22.7971 24 23.2135 23.8488 23.5205 23.5798C23.8275 23.3107 24 22.9458 24 22.5653V7.47418H18Z"
-                                fill="black" />
-                        </svg></div>
-                    <span>Create an account</span>
-                </div>
-                <h3>Order notes</h3>
-                <textarea placeholder="write about your order"></textarea>
-            </form>
-            <div class="payment-container">
-                <div class="check-order">
-                    <h2>Your Order</h2>
-                    <div class="text-container">
-                        <h3>product</h3>
-                        <h3>total</h3>
+            <div class="table-cart">
+                <div class="table-description">
+                    <div class="column" id="first">
+                        <p>product</p>
                     </div>
-                    <div class="text-container">
-                        <p>t-shirt summer collection</p>
-                        <p>$45 </p>
+                    <div class="column" id="second">
+                        <p>price</p>
                     </div>
-                    <div class="text-container">
-                        <p>sneakers premium</p>
-                        <p>$80</p>
+                    <div class="column" id="third">
+                        <p>quantity</p>
                     </div>
-                    <div class="text-container">
-                        <p class="bold">shipping</p>
-                        <p class="bold">free shipping</p>
+                    <div class="column" id="fourth">
+                        <p>total</p>
                     </div>
-                    <div class="text-container">
-                        <p class="bold">subtotal</p>
-                        <p>$125</p>
-                    </div>
-                    <div class="text-container">
-                        <h3>total</h3>
-                        <h3>$125</h3>
+                    <div class="column" id="fifth">
+                        <p></p>
                     </div>
                 </div>
-                <div class="payment">
-                    <h2>payment</h2>
-                    <div class="payment-card">
-                        <div class="checkbox-container">
-                            <div class="checkbox"> <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M18 7.47418V5.25822C18 4.5677 17.8448 3.88394 17.5433 3.24598C17.2417 2.60803 16.7998 2.02837 16.2426 1.5401C15.6855 1.05183 15.0241 0.664508 14.2961 0.400258C13.5681 0.136008 12.7879 0 12 0C11.2121 0 10.4319 0.136008 9.7039 0.400258C8.97595 0.664508 8.31451 1.05183 7.75736 1.5401C7.20021 2.02837 6.75825 2.60803 6.45672 3.24598C6.1552 3.88394 6 4.5677 6 5.25822V10.5164C6 10.7157 6.09031 10.9067 6.25105 11.0476C6.4118 11.1885 6.62981 11.2676 6.85714 11.2676C7.08447 11.2676 7.30249 11.1885 7.46323 11.0476C7.62398 10.9067 7.71429 10.7157 7.71429 10.5164V8.97653H14.5714V7.47418H7.71429V5.25822C7.71429 4.2621 8.16582 3.30678 8.96954 2.60242C9.77327 1.89805 10.8634 1.50235 12 1.50235C13.1366 1.50235 14.2267 1.89805 15.0305 2.60242C15.8342 3.30678 16.2857 4.2621 16.2857 5.25822V10.4789C16.2857 10.6781 16.376 10.8692 16.5368 11.01C16.6975 11.1509 16.9155 11.23 17.1429 11.23C17.3702 11.23 17.5882 11.1509 17.7489 11.01C17.9097 10.8692 18 10.6781 18 10.4789V8.97653H22.2857V22.4977H1.71429V8.97653H4.28571V7.47418H0V22.5653C0 22.9458 0.172484 23.3107 0.479508 23.5798C0.786532 23.8488 1.20295 24 1.63714 24H22.3629C22.7971 24 23.2135 23.8488 23.5205 23.5798C23.8275 23.3107 24 22.9458 24 22.5653V7.47418H18Z"
-                                        fill="black" />
-                                </svg></div>
-                            <span>Create an account</span>
+                <div class="table-product">
+                    <div class="column" id="first">
+                        <div class="card">
+                            <div class="cover">
+
+                                <img src="../img/t-shirt.png" alt="">
+                                <div class="cirlce"></div>
+                            </div>
+
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aspernatur, velit ratione, rerum ex officiis molestias laboriosam nam quo nostrum vero, cum maiores sint voluptatem iste doloremque dolorum. Fugiat, et.</p>
-                        <div class="checkbox-container">
-                            <div class="checkbox"> <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M18 7.47418V5.25822C18 4.5677 17.8448 3.88394 17.5433 3.24598C17.2417 2.60803 16.7998 2.02837 16.2426 1.5401C15.6855 1.05183 15.0241 0.664508 14.2961 0.400258C13.5681 0.136008 12.7879 0 12 0C11.2121 0 10.4319 0.136008 9.7039 0.400258C8.97595 0.664508 8.31451 1.05183 7.75736 1.5401C7.20021 2.02837 6.75825 2.60803 6.45672 3.24598C6.1552 3.88394 6 4.5677 6 5.25822V10.5164C6 10.7157 6.09031 10.9067 6.25105 11.0476C6.4118 11.1885 6.62981 11.2676 6.85714 11.2676C7.08447 11.2676 7.30249 11.1885 7.46323 11.0476C7.62398 10.9067 7.71429 10.7157 7.71429 10.5164V8.97653H14.5714V7.47418H7.71429V5.25822C7.71429 4.2621 8.16582 3.30678 8.96954 2.60242C9.77327 1.89805 10.8634 1.50235 12 1.50235C13.1366 1.50235 14.2267 1.89805 15.0305 2.60242C15.8342 3.30678 16.2857 4.2621 16.2857 5.25822V10.4789C16.2857 10.6781 16.376 10.8692 16.5368 11.01C16.6975 11.1509 16.9155 11.23 17.1429 11.23C17.3702 11.23 17.5882 11.1509 17.7489 11.01C17.9097 10.8692 18 10.6781 18 10.4789V8.97653H22.2857V22.4977H1.71429V8.97653H4.28571V7.47418H0V22.5653C0 22.9458 0.172484 23.3107 0.479508 23.5798C0.786532 23.8488 1.20295 24 1.63714 24H22.3629C22.7971 24 23.2135 23.8488 23.5205 23.5798C23.8275 23.3107 24 22.9458 24 22.5653V7.47418H18Z"
-                                        fill="black" />
-                                </svg></div>
-                            <span>Create an account</span>
-                        </div>
-                        <div class="checkbox-container">
-                            <div class="checkbox"> <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M18 7.47418V5.25822C18 4.5677 17.8448 3.88394 17.5433 3.24598C17.2417 2.60803 16.7998 2.02837 16.2426 1.5401C15.6855 1.05183 15.0241 0.664508 14.2961 0.400258C13.5681 0.136008 12.7879 0 12 0C11.2121 0 10.4319 0.136008 9.7039 0.400258C8.97595 0.664508 8.31451 1.05183 7.75736 1.5401C7.20021 2.02837 6.75825 2.60803 6.45672 3.24598C6.1552 3.88394 6 4.5677 6 5.25822V10.5164C6 10.7157 6.09031 10.9067 6.25105 11.0476C6.4118 11.1885 6.62981 11.2676 6.85714 11.2676C7.08447 11.2676 7.30249 11.1885 7.46323 11.0476C7.62398 10.9067 7.71429 10.7157 7.71429 10.5164V8.97653H14.5714V7.47418H7.71429V5.25822C7.71429 4.2621 8.16582 3.30678 8.96954 2.60242C9.77327 1.89805 10.8634 1.50235 12 1.50235C13.1366 1.50235 14.2267 1.89805 15.0305 2.60242C15.8342 3.30678 16.2857 4.2621 16.2857 5.25822V10.4789C16.2857 10.6781 16.376 10.8692 16.5368 11.01C16.6975 11.1509 16.9155 11.23 17.1429 11.23C17.3702 11.23 17.5882 11.1509 17.7489 11.01C17.9097 10.8692 18 10.6781 18 10.4789V8.97653H22.2857V22.4977H1.71429V8.97653H4.28571V7.47418H0V22.5653C0 22.9458 0.172484 23.3107 0.479508 23.5798C0.786532 23.8488 1.20295 24 1.63714 24H22.3629C22.7971 24 23.2135 23.8488 23.5205 23.5798C23.8275 23.3107 24 22.9458 24 22.5653V7.47418H18Z"
-                                        fill="black" />
-                                </svg></div>
-                            <span>Create an account</span>
-                        </div>
-                        <div class="checkbox-container">
-                            <div class="checkbox"> <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M18 7.47418V5.25822C18 4.5677 17.8448 3.88394 17.5433 3.24598C17.2417 2.60803 16.7998 2.02837 16.2426 1.5401C15.6855 1.05183 15.0241 0.664508 14.2961 0.400258C13.5681 0.136008 12.7879 0 12 0C11.2121 0 10.4319 0.136008 9.7039 0.400258C8.97595 0.664508 8.31451 1.05183 7.75736 1.5401C7.20021 2.02837 6.75825 2.60803 6.45672 3.24598C6.1552 3.88394 6 4.5677 6 5.25822V10.5164C6 10.7157 6.09031 10.9067 6.25105 11.0476C6.4118 11.1885 6.62981 11.2676 6.85714 11.2676C7.08447 11.2676 7.30249 11.1885 7.46323 11.0476C7.62398 10.9067 7.71429 10.7157 7.71429 10.5164V8.97653H14.5714V7.47418H7.71429V5.25822C7.71429 4.2621 8.16582 3.30678 8.96954 2.60242C9.77327 1.89805 10.8634 1.50235 12 1.50235C13.1366 1.50235 14.2267 1.89805 15.0305 2.60242C15.8342 3.30678 16.2857 4.2621 16.2857 5.25822V10.4789C16.2857 10.6781 16.376 10.8692 16.5368 11.01C16.6975 11.1509 16.9155 11.23 17.1429 11.23C17.3702 11.23 17.5882 11.1509 17.7489 11.01C17.9097 10.8692 18 10.6781 18 10.4789V8.97653H22.2857V22.4977H1.71429V8.97653H4.28571V7.47418H0V22.5653C0 22.9458 0.172484 23.3107 0.479508 23.5798C0.786532 23.8488 1.20295 24 1.63714 24H22.3629C22.7971 24 23.2135 23.8488 23.5205 23.5798C23.8275 23.3107 24 22.9458 24 22.5653V7.47418H18Z"
-                                        fill="black" />
-                                </svg></div>
-                            <span>Create an account</span>
+                        <div class="product-desc">
+                            <p class="name">T-shit summer collection</p>
+                            <div class="settings">
+                                <div class="ellipse" id="black"></div>
+                                <p class="size">M</p>
+                            </div>
+
+
                         </div>
                     </div>
+                    <div class="column" id="second">
+                        <p onclick="ChangePrice(0)">$45</p>
+                    </div>
+                    <div class="column" id="third">
+                        <div class="counter">
+                            <input type="button" onclick="MinusCount(event)" value="-" class="minus">
+                            <p id="plus" class="count">1</p>
+                            <input type="button" onclick="PlusCount(event)" value="+" class="plus" >
+                        </div>
+                    </div>
+                    <div class="column" id="fourth">
+                        <p id="total">$45</p>
+                    </div>
+                    <div class="column" id="fifth">
+                        <p class="delete" onclick="deleteProduct()">x</p>
+                    </div>
                 </div>
-               
+                <div class="table-product">
+                    <div class="column" id="first">
+                        <div class="card">
+                            <div class="cover">
+
+                                <img src="../img/t-shirt.png" alt="">
+                                <div class="cirlce"></div>
+                            </div>
+
+                        </div>
+                        <div class="product-desc">
+                            <p class="name">T-shit summer collection</p>
+                            <div class="settings">
+                                <div class="ellipse" id="black"></div>
+                                <p class="size">M</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="column" id="second">
+                        <p>$45</p>
+                    </div>
+                    <div class="column" id="third">
+                        <div class="counter">
+                            <input type="button" onclick="MinusCount(event)" value="-" class="minus">
+                            <p class="count">1</p>
+                            <input type="button" onclick="PlusCount(event)" value="+" class="plus">
+                        </div>
+                    </div>
+                    <div class="column" id="fourth">
+                        <p>$45</p>
+                    </div>
+                    <div class="column" id="fifth">
+                        <p class="delete">x</p>
+                    </div>
+                </div>
+                <div class="table-product">
+                    <div class="column" id="first">
+                        <div class="card">
+                            <div class="cover">
+
+                                <img src="../img/t-shirt.png" alt="">
+                                <div class="cirlce"></div>
+                            </div>
+
+                        </div>
+                        <div class="product-desc">
+                            <p class="name">T-shit summer collection</p>
+                            <div class="settings">
+                                <div class="ellipse" id="black"></div>
+                                <p class="size">M</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="column" id="second">
+                        <p>$45</p>
+                    </div>
+                    <div class="column" id="third">
+                        <div class="counter">
+                            <input type="button" onclick="MinusCount(event)" value="-" class="minus">
+                            <p class="count">1</p>
+                            <input type="button" onclick="PlusCount(event)" value="+" class="plus">
+                        </div>
+                    </div>
+                    <div class="column" id="fourth">
+                        <p>$45</p>
+                    </div>
+                    <div class="column" id="fifth">
+                        <p class="delete">x</p>
+                    </div>
+                </div>
             </div>
-             <div class="btn-container">
-                    <input type="button" value="place order" class="btn orange">
-                </div>
+            <div class="options">
+                <p class="clear">clear all</p>
+                <p class="update">update cart</p>
+            </div>
         </div>
     </section>
-
-
+    <div class="cart-total">
+        <div class="wrapper">
+            <div class="check">
+                <h3>Cart total</h3>
+                <div class="container">
+                    <p>subtotal:</p>
+                    <p class="subtotal">165$</p>
+                </div>
+                <div class="container">
+                    <p>shipping</p>
+                    <p class="shipping">free shipping</p>
+                </div>
+                <div class="container">
+                    <p class="calculated">calculate shipping</p>
+                    <p></p>
+                </div>
+                <div class="container">
+                    <p>total:</p>
+                    <p class="total">$165</p>
+                </div>
+            </div>
+            <input type="button" value="checkout" class="btn orange">
+        </div>
+    </div>
     <footer>
         <div class="wrapper">
             <div class="container">
@@ -288,6 +349,8 @@
                 </div>
             </div>
     </footer>
+    <script src="../js/basket.js"></script>
+    <script src="../js/testing.js"></script>
 </body>
 
 </html>

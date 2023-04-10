@@ -195,7 +195,28 @@ section{
         .container{
             @extend %container;
             margin-bottom: 30px;
-            .card{
+            flex-wrap: wrap;
+           
+        }
+    } 
+   
+    .block-button{
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        .btn{
+            background-color: $orange;
+            color: $white;
+            width: 200px;
+            padding: 15px;
+            &:hover{
+                background-color: $white;
+                color: $orange;
+            }
+        }
+    }
+} 
+.card{
                 width: 31%;
                 .cover{
                     @include cover(100%);
@@ -242,24 +263,6 @@ section{
 
                 }
             }
-        }
-    }
-    .block-button{
-        display: flex;
-        justify-content: center;
-        margin-top: 80px;
-        .btn{
-            background-color: $orange;
-            color: $white;
-            width: 200px;
-            padding: 15px;
-            &:hover{
-                background-color: $white;
-                color: $orange;
-            }
-        }
-    }
-}
 footer{
     background-color: lightgray;
     .wrapper{
@@ -396,6 +399,8 @@ footer{
 }
 }
 @import "./pages-style/product";
+@import "./pages-style/basket";
+@import "./pages-style/order";
 .page-title{
 @extend %container;
 flex-direction: column;
@@ -421,6 +426,7 @@ a, span{
     border: 1px solid $gray;
     border-radius: 5px;
     align-items: center;
+    width: fit-content;
     .plus,.minus{
         padding: 5px 10px;
         &:hover{

@@ -33,7 +33,7 @@ input[type=text] {
   background-color: #ff2200;
 }
 
-.page-title, .related-products .wrapper .card-content, .related-products .wrapper .container, .description .wrapper .sample-text, .description .wrapper nav, .product .tags, .product .categories, .product .share, .product .wrapper .product-info .product-card .to-cart, .product .wrapper .product-info .settings .color .circle-container, .product .wrapper .product-info .settings, .product .wrapper .product-info .product-name, .product .wrapper .photos .container, .product .wrapper, .cards .wrapper .container, .category .wrapper .container, .main .wrapper, header .wrapper .nav-container, header .wrapper {
+.page-title, .order .wrapper .payment-container .check-order .text-container, .order .wrapper .payment-container, .order .wrapper form .container, .cart-total .wrapper .check .container, .basket .wrapper .options, .basket .wrapper .table-cart .table-product, .basket .wrapper .table-cart .table-description, .related-products .wrapper .card-content, .related-products .wrapper .container, .description .wrapper .sample-text, .description .wrapper nav, .product .tags, .product .categories, .product .share, .product .wrapper .product-info .product-card .to-cart, .product .wrapper .product-info .settings .color .circle-container, .product .wrapper .product-info .settings, .product .wrapper .product-info .product-name, .product .wrapper .photos .container, .product .wrapper, .cards .wrapper .container, .category .wrapper .container, .main .wrapper, header .wrapper .nav-container, header .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -267,64 +267,6 @@ section {
 .cards .wrapper .container {
   margin-bottom: 30px;
 }
-.cards .wrapper .container .card {
-  width: 31%;
-}
-.cards .wrapper .container .card .cover {
-  position: relative;
-  width: 100%;
-  padding-top: 100%;
-  background-color: #e3e3e3;
-}
-.cards .wrapper .container .card .cover img, .cards .wrapper .container .card .cover .content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.cards .wrapper .container .card .cover img {
-  object-fit: contain;
-  z-index: 2;
-  scale: 0.7;
-}
-.cards .wrapper .container .card .cover .scale {
-  scale: 0.8;
-}
-.cards .wrapper .container .card .cover .scale-1 {
-  top: 3%;
-  scale: 0.8;
-}
-.cards .wrapper .container .card .cover .circle {
-  width: 60%;
-  height: 60%;
-  border-radius: 100%;
-  background-color: #fff;
-  position: absolute;
-  z-index: 0;
-  top: 20%;
-  left: 20%;
-  z-index: 1;
-}
-.cards .wrapper .container .card .card-content {
-  padding-top: 30px;
-}
-.cards .wrapper .container .card .card-content h3, .cards .wrapper .container .card .card-content p {
-  text-align: center;
-}
-.cards .wrapper .container .card h3 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  text-transform: capitalize;
-  font-size: 20px;
-  margin-bottom: 12px;
-}
-.cards .wrapper .container .card p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-}
 .cards .block-button {
   display: flex;
   justify-content: center;
@@ -339,6 +281,65 @@ section {
 .cards .block-button .btn:hover {
   background-color: #fff;
   color: #ff2200;
+}
+
+.card {
+  width: 31%;
+}
+.card .cover {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  background-color: #e3e3e3;
+}
+.card .cover img, .card .cover .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card .cover img {
+  object-fit: contain;
+  z-index: 2;
+  scale: 0.7;
+}
+.card .cover .scale {
+  scale: 0.8;
+}
+.card .cover .scale-1 {
+  top: 3%;
+  scale: 0.8;
+}
+.card .cover .circle {
+  width: 60%;
+  height: 60%;
+  border-radius: 100%;
+  background-color: #fff;
+  position: absolute;
+  z-index: 0;
+  top: 20%;
+  left: 20%;
+  z-index: 1;
+}
+.card .card-content {
+  padding-top: 30px;
+}
+.card .card-content h3, .card .card-content p {
+  text-align: center;
+}
+.card h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-transform: capitalize;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.card p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 footer {
@@ -737,6 +738,283 @@ footer .wrapper .container .email .square .telegram {
   margin-top: 10px;
 }
 
+.basket .wrapper .table-cart {
+  border: 1px solid #939393;
+}
+.basket .wrapper .table-cart .table-description {
+  padding: 20px 0;
+  border: 1px solid #939393;
+}
+.basket .wrapper .table-cart #first {
+  width: 45%;
+}
+.basket .wrapper .table-cart #second, .basket .wrapper .table-cart #third, .basket .wrapper .table-cart #fourth {
+  width: 15%;
+}
+.basket .wrapper .table-cart #fifth {
+  width: 10%;
+}
+.basket .wrapper .table-cart p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+  color: #505050;
+}
+.basket .wrapper .table-cart .table-product {
+  padding-top: 20px;
+}
+.basket .wrapper .table-cart .table-product:last-child {
+  padding-bottom: 20px;
+}
+.basket .wrapper .table-cart .table-product #first {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.basket .wrapper .table-cart .table-product #first p {
+  text-align: left;
+}
+.basket .wrapper .table-cart .table-product #first .product-desc {
+  margin-left: -20px;
+}
+.basket .wrapper .table-cart .table-product #first .product-desc .settings {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+.basket .wrapper .table-cart .table-product #first .product-desc .settings .ellipse {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+}
+.basket .wrapper .table-cart .table-product #first .product-desc .settings .size {
+  font-weight: 700;
+  font-size: 18px;
+}
+.basket .wrapper .table-cart .table-product .delete {
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.basket .wrapper .table-cart .table-product .delete:hover {
+  color: #ff2200;
+}
+.basket .wrapper .options {
+  margin-top: 30px;
+}
+.basket .wrapper .options .clear {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #505050;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.basket .wrapper .options .update {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.cart-total .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.cart-total .wrapper .btn.orange {
+  width: 15%;
+  margin-top: 20px;
+}
+.cart-total .wrapper .check {
+  padding: 25px;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+  width: 35%;
+}
+.cart-total .wrapper .check h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.cart-total .wrapper .check .container {
+  margin-bottom: 15px;
+}
+.cart-total .wrapper .check .container:nth-child(4) {
+  margin-bottom: 30px;
+}
+.cart-total .wrapper .check .container:last-child {
+  margin-bottom: 0;
+  padding-top: 20px;
+  border-top: 1px solid #939393;
+}
+.cart-total .wrapper .check .container p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.cart-total .wrapper .check .container p.subtotal {
+  color: #505050;
+}
+.cart-total .wrapper .check .container p.shipping {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.cart-total .wrapper .check .container p.calculated {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.cart-total .wrapper .check .container p.total {
+  font-weight: 700;
+}
+
+.order .wrapper .checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.order .wrapper .checkbox-container .checkbox {
+  width: 16px;
+  height: 16px;
+  background-color: #e3e3e3;
+  border: 1px solid #939393;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order .wrapper .checkbox-container .checkbox svg {
+  display: none;
+}
+.order .wrapper .checkbox-container .checkbox.checked {
+  background-color: #fff;
+}
+.order .wrapper .checkbox-container .checkbox.checked svg {
+  display: inline-block;
+}
+.order .wrapper .checkbox-container span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.order .wrapper h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.order .wrapper h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+.order .wrapper form {
+  border-bottom: 1px solid #939393;
+}
+.order .wrapper form h2 {
+  margin-bottom: 40px;
+}
+.order .wrapper form input {
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #939393;
+  margin-bottom: 20px;
+}
+.order .wrapper form input:last-child {
+  margin-bottom: 0;
+}
+.order .wrapper form input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #000;
+}
+.order .wrapper form .container {
+  margin-bottom: 20px;
+}
+.order .wrapper form .container input {
+  width: 48%;
+  margin-bottom: 0;
+}
+.order .wrapper form h3 {
+  margin: 30px 0 10px;
+}
+.order .wrapper form textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  width: 100%;
+  height: 80px;
+}
+.order .wrapper .payment-container {
+  align-items: start;
+  margin-top: 30px;
+}
+.order .wrapper .payment-container .check-order {
+  width: 48%;
+}
+.order .wrapper .payment-container .check-order h2 {
+  margin-bottom: 40px;
+}
+.order .wrapper .payment-container .check-order .text-container {
+  padding-bottom: 10px;
+  border-bottom: 1px dashed;
+}
+.order .wrapper .payment-container .check-order .text-container p {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #939393;
+  text-transform: capitalize;
+}
+.order .wrapper .payment-container .check-order .text-container p:first-child {
+  padding-left: 20px;
+}
+.order .wrapper .payment-container .check-order .text-container p:last-child {
+  padding-right: 10px;
+}
+.order .wrapper .payment-container .check-order .text-container p.bold {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.order .wrapper .payment-container .check-order .text-container:not(:first-child) {
+  margin-top: 10px;
+}
+.order .wrapper .payment-container .check-order .text-container:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.order .wrapper .payment-container .payment {
+  width: 48%;
+}
+.order .wrapper .payment-container .payment h2 {
+  margin-bottom: 30px;
+}
+.order .wrapper .payment-container .payment-card {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  padding: 15px 15px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.order .wrapper .payment-container .payment-card p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #939393;
+  font-size: 14px;
+  text-align: justify;
+}
+.order .wrapper .btn-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.order .wrapper .btn-container .btn.orange {
+  width: 20%;
+}
+
 .page-title {
   flex-direction: column;
   background-color: #ff2200;
@@ -764,6 +1042,7 @@ footer .wrapper .container .email .square .telegram {
   border: 1px solid #939393;
   border-radius: 5px;
   align-items: center;
+  width: fit-content;
 }
 .counter .plus, .counter .minus {
   padding: 5px 10px;
